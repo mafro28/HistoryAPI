@@ -3,7 +3,11 @@
 <head>
 <script>
 function goBack() {
-  window.history.back()
+  window.history.back();
+}
+
+function refreshPage() {
+  window.history.go(0);
 }
 </script>
 </head>
@@ -11,6 +15,7 @@ function goBack() {
     <h1>This is the second page</h1>
 
 <input type="button" value="Back" onclick="goBack()">
+<input type="button" value="Refresh" onclick="refreshPage()">
 
 </body>
 </html>
