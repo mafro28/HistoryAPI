@@ -13,6 +13,7 @@ function refreshPage() {
 </head>
 <body>
     <h1>This is the second page</h1>
+    <h2>The Refresh button calls a function containing window.history.go(0) and since the value is set to zero, this refreshes the current page rather than navigating to another page.</h2>
 
 <input type="button" value="Back" onclick="goBack()">
 <input type="button" value="Refresh" onclick="refreshPage()">
